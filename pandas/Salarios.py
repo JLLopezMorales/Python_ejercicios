@@ -14,7 +14,8 @@ plt.show()
 model = LinearRegression()
 model.fit(df[["YearsExperience"]], df["Salary"])
 # Aquí creas bien el array de NumPy
-salary_15_years_experience = np.array([[15]])
+salary_15_years_experience = np.array([[15]]) #para predecir el salario de una persona con 15 años de experiencia
+#tiene que ser un array de 2 dimensiones, por eso usamos doble corchete
 prediction = model.predict(salary_15_years_experience)
 
 
